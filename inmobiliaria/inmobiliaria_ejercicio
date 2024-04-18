@@ -1,0 +1,54 @@
+-------------------------------------------------
+Se quiere modelar una agencia inmobiliaria para lo cual se deben
+tener en cuenta las siguientes entidades e informaciones asociadas:
+
+a. Un inmueble viene dado por su ubicación y los metros
+cuadrados que ocupa. Hay dos tipos de inmuebles: superficies y
+construcciones. Los primeros tienen su precio por metro cuadrado. A
+su vez, hay dos tipos de superficies: solares y plazas de garaje. Los
+solares pueden estar en zona rústica o urbana. Las plazas de garaje
+pueden formar parte de un garaje público o de uno privado. Por su
+parte, las construcciones pueden ser nuevas o de segunda mano. Hay
+dos tipos de construcciones: viviendas y locales comerciales. Las
+viviendas tienen precio, número de habitaciones y piso. Los locales
+tienen precio por metro cuadrado.
+
+b. La agencia que queremos modelar se dedica a la venta y alquiler de
+inmuebles. Ahora bien, solamente alquila plazas de garaje y locales
+comerciales, mientras que solo vende solares y viviendas.
+
+c. La agencia inmobiliaria viene dada por sendas secuencias de
+alquileres y ventas.
+
+Se pide:
+− Definir la jerarquía de clases de forma que se cumplan los requisitos
+anteriores.
+− Para cada una de las clases, definir su(s) constructora(s), métodos de
+acceso a cada uno de los atributos y un método muestra() que escriba, de
+la manera que consideres más conveniente, la información de la entidad de
+que se trate.
+− Definir un método público precio() que calcula el precio que tiene una
+superficie.
+clases abstractas e Interfaces 28
+
+− Definir un método añadeVentaInmueble(in), que añade el inmueble
+dado por el parámetro a la secuencia de inmuebles en venta de la agencia,
+siempre que no estuviera ya antes en venta.
+− Definir un método añadeAlquilerInmueble(in), que añade el inmueble
+dado por el parámetro a la secuencia de inmuebles en alquiler de la
+agencia, siempre que no estuviera ya antes en alquiler.
+− Definir métodos que respondan a los siguientes servicios:
+1. inmueblesVenta(p), que muestra los inmuebles con un precio de
+venta inferior al parámetro.
+2. localesSegundaMano(m), que muestra los locales comerciales de
+segunda mano con una superficie superior al parámetro.
+3. solaresRusticos(), que averigua cuántos solares no urbanos están
+en venta.
+clases abstractas e Interfaces 29
+Ejercicio 2: Inmobiliaria
+2. Define el método equals() y toString() para las clases
+AgenciaInmobiliaria, Inmueble, Superficie y Solar.
+3. Dos agencias inmobiliarias han decidido fusionarse. Define un
+método fusion(ag) dentro de la clase de las agencias inmobiliarias, que
+permita crear una agencia nueva a partir de la agencia que invoca el
+método y la del parámetro dado.
